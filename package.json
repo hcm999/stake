@@ -1,0 +1,17 @@
+{
+  "name": "gana-stake-auto",
+  "version": "1.0.0",
+  "description": "GANA质押数据自动查询系统",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy"
+  },
+  "dependencies": {
+    "@vercel/postgres": "^0.8.0",
+    "ethers": "^6.9.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
