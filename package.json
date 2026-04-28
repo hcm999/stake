@@ -1,15 +1,24 @@
 {
-  "name": "gana-staking-monitor",
-  "version": "2.0.0",
-  "description": "GANA Staking Data Monitor - Admin + Viewer",
-  "engines": {
-    "node": "22.x"
-  },
+  "name": "staking-analytics",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vercel dev",
-    "deploy": "vercel deploy --prod"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
-    "ethers": "^6.7.0"
+    "@ant-design/charts": "^2.0.0",
+    "@prisma/client": "^5.0.0",
+    "@vercel/postgres": "^0.8.0",
+    "antd": "^5.0.0",
+    "ethers": "^6.0.0",
+    "next": "^15.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0"
   }
 }
